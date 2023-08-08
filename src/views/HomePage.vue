@@ -43,7 +43,10 @@
       <ion-button expand="full" class="text-center-container">
           Mobile number
       </ion-button>
-      <ion-text>New user?<ion-router-link>sign in</ion-router-link></ion-text>
+      <ion-text class="text-center-container">
+        <span>New user?</span>
+        <ion-router-link>sign in</ion-router-link>
+      </ion-text>
     </ion-content>
   </ion-page>
 </template>
@@ -72,15 +75,17 @@
 
 .text-center-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 5vh; /* Center vertically within the page if needed */
 }
+.text-center-container span {
+  margin-right: 0.5rem; /* Add spacing between the text and link */
+}
+
 .googlebutton{
-  background-color: #ffffff;
-  color: black;
+  color: #ffffff;
 }
 
 </style>
